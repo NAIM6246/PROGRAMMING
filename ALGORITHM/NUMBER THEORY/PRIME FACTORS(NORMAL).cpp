@@ -1,14 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 void PrimeFactors(long long n){
-    long long x,y,z;
+    long long x,y,z,c=n;
     if(n%2==0){
         cout<<"2"<<endl;
         while(n%2==0){
         n/=2;
         }
     }
-    long long c=n;
     for(long long i=3;i*i<=c;i+=2){
         if(n%i==0){
             cout<<i<<endl;
@@ -16,6 +15,8 @@ void PrimeFactors(long long n){
                 n/=i;
         }
     }
+    if(n>1)
+        cout<<n<<endl;
 }
 int main(){
     long long n;
