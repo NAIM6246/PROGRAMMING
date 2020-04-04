@@ -1,0 +1,2 @@
+cout.setf(ios::fixed);
+cout << setprecision(0) << value;
